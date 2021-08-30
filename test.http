@@ -1,0 +1,38 @@
+http://localhost:5000/api/students
+
+
+###
+
+http://localhost:5000/api/students/1
+
+###
+
+POST http://localhost:5000/api/students HTTP/1.1
+content-type: application/json
+
+{
+    "id": 5,
+    "first_name": "Michele",
+    "last_name": "McCaskill",
+    "email": "michele.mccaskill@houseofemail.com",
+    "major": "Libray Sciences",
+    "ip_address": "26.58.193.27"
+}
+
+###
+
+
+PUT http://localhost:5000/api/students/1 HTTP/1.1
+content-type: application/json
+
+{
+    "first_name": "Steve",
+    "last_name": "Schwartz",
+    "email": "steve.schwartz@madeupdomain.com",
+    "major": "Physical Education"
+}
+
+
+###
+
+DELETE http://localhost:5000/api/students/4
